@@ -67,9 +67,9 @@ function info_card_html(info){
 
 ${info}
 <div style="padding-top: 30px">
-    <p  class="font-weight-light inline " style="    font-size: 14px; font-style: italic;" >If you have any resources or tips about this class/subject please email</p>
-    <a class="font-weight-light inline " style="    font-size: 14px; font-style: italic;"  href="mailto:resources700@gmail.com">resources700@gmail.com</a>
-    <p  class="font-weight-light inline " style="    font-size: 14px; font-style: italic;" >Every contribution makes a difference!</p>
+    <p class="font-weight-light inline " style="display: inline-block;   font-size: 14px; font-style: italic;" >If you have any resources or tips about this class/subject please email</p>
+    <a class="font-weight-light inline " style="display: inline-block;    font-size: 14px; font-style: italic;"  href="mailto:resources700@gmail.com">resources700@gmail.com</a>
+    <p  class="font-weight-light inline " style="display: inline-block;    font-size: 14px; font-style: italic;" >Every contribution makes a difference!</p>
 </div>
   </div>
 </div>`
