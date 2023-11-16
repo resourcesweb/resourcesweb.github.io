@@ -61,10 +61,7 @@ ${img}
 function info_card_html(info){
 
     return ` <div class="card file_card" >
-  <div class="card-body">
-
-   
-
+  <div class="card-body"  id="backButton">
 ${info}
 <div style="padding-top: 30px">
     <p class="font-weight-light inline " style="display: inline-block;   font-size: 14px; font-style: italic;" >If you have any resources or tips about this class/subject please email</p>
@@ -176,7 +173,9 @@ function switch_to_dic(dict){
         html += cards_html
 
         reset_page(html)
-    window.scrollTo({ top: 0, behavior: 'auto' });
+    // window.scrollTo({ top: 0, behavior: 'auto' });
+    const targetElement = document.getElementById("backButton"); // Replace with the actual element or selector
+    targetElement.scrollIntoView({ behavior: "auto", block: "start" });
   // console.log(org);
 
 
