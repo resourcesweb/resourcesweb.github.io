@@ -109,6 +109,34 @@ div.content {
   .title-case {
     text-transform: capitalize;
   }
+  
+  /* Maintenance Banner */
+  .maintenance-banner {
+    background-color: #ffc107;
+    color: #000;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    border-bottom: 3px solid #ff9800;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .maintenance-banner p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .maintenance-banner a {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  .maintenance-banner a:hover {
+    color: #333;
+  }
       </style>
   </head>
   <!-- Google tag (gtag.js) -->
@@ -123,8 +151,18 @@ div.content {
   gtag('js', new Date());
 
   gtag('config', 'G-S2DFG1SPWQ');
-</script>
+  </script>
   <body>
+
+<!-- Maintenance Banner -->
+<div class="maintenance-banner">
+  <p>
+    <strong>⚠️ This website is no longer maintained.</strong> We are looking for someone with basic tech skills to take over running it. 
+    No major programming knowledge required - just basic tech savvy! 
+    If you're interested in helping maintain this resource for Touro students, please 
+    <a href="mailto:resources700@gmail.com">contact us</a>.
+  </p>
+</div>
 
 <!--<div class="content">-->
 <!-- The sidebar -->
