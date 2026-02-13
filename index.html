@@ -16,7 +16,8 @@
   width: 200px;
   background-color: #f1f1f1;
   position: fixed;
-  height: 100%;
+  top: 70px; /* below fixed maintenance banner */
+  height: calc(100% - 70px);
   overflow: auto;
 }
 
@@ -52,6 +53,7 @@ div.content {
     width: 100%;
     height: auto;
     position: relative;
+    top: auto;
   }
   .sidebar a  {float: left;}
   .sidebar button {float: left}
@@ -110,14 +112,18 @@ div.content {
     text-transform: capitalize;
   }
   
-  /* Maintenance Banner */
+  /* Maintenance Banner - always fixed at top, can't scroll past it */
   .maintenance-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     background-color: #ffc107;
     color: #000;
     padding: 15px 20px;
     text-align: center;
-    position: relative;
-    z-index: 1000;
+    z-index: 9999;
     border-bottom: 3px solid #ff9800;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
@@ -136,6 +142,11 @@ div.content {
   
   .maintenance-banner a:hover {
     color: #333;
+  }
+  
+  /* Push page content below the fixed banner */
+  body {
+    padding-top: 70px;
   }
       </style>
   </head>
